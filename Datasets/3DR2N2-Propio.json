@@ -1,0 +1,14 @@
+{
+    "pieza0": {
+        "id": "pieza0",
+        "name": "piezaCero"
+    },
+    "pieza1": {
+        "id": "pieza1",
+        "name": "piezaUno"
+    },
+    "pieza2": {
+        "id": "pieza2",
+        "name": "piezaDos"
+    }
+}
