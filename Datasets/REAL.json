@@ -1,0 +1,38 @@
+[
+	{
+		"taxonomy_id": "pieza0",
+		"taxonomy_name": "piezaCero",
+		"baseline": {
+			"1-view": 0.661,
+			"2-view": 0.717,
+			"3-view": 0.732,
+			"4-view": 0.738,
+			"5-view": 0.754
+		},
+		"test": ["pieza0subfolder"]
+	},
+	{
+		"taxonomy_id": "pieza1",
+		"taxonomy_name": "piezaUno",
+		"baseline": {
+			"1-view": 0.468,
+			"2-view": 0.527,
+			"3-view": 0.545,
+			"4-view": 0.558,
+			"5-view": 0.565
+		},
+		"test": ["pieza1subfolder"]
+	},
+	{
+		"taxonomy_id": "pieza2",
+		"taxonomy_name": "piezaDos",
+		"baseline": {
+			"1-view": 0.544,
+			"2-view": 0.582,
+			"3-view": 0.593,
+			"4-view": 0.595,
+			"5-view": 0.600
+		},
+		"test": ["pieza2subfolder"]
+	}
+]
