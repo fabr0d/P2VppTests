@@ -1,0 +1,16 @@
+[
+  {
+    "taxonomy_id": "pieza1", 
+    "taxonomy_name": "pieza1", 
+    "baseline": 
+    {
+      "1-view": 0.798, 
+      "2-view": 0.821, 
+      "3-view": 0.829, 
+      "4-view": 0.833, 
+      "5-view": 0.836
+    }, 
+    "test": 
+      ["pieza1subfolder"]
+  }
+]
