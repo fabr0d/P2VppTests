@@ -150,20 +150,21 @@ class CenterCrop(object):
 
             processed_images = np.append(processed_images, [processed_image], axis=0)
             # Debug
-            # fig = plt.figure()
-            # ax1 = fig.add_subplot(1, 2, 1)
-            # ax1.imshow(img)
-            # if not bounding_box is None:
-            #     rect = patches.Rectangle((bounding_box[0], bounding_box[1]),
-            #                              bbox_width,
-            #                              bbox_height,
-            #                              linewidth=1,
-            #                              edgecolor='r',
-            #                              facecolor='none')
-            #     ax1.add_patch(rect)
-            # ax2 = fig.add_subplot(1, 2, 2)
-            # ax2.imshow(processed_image)
-            # plt.show()
+            fig = plt.figure()
+            ax1 = fig.add_subplot(1, 2, 1)
+            ax1.imshow(img)
+            if not bounding_box is None:
+                rect = patches.Rectangle((bounding_box[0], bounding_box[1]),
+                                         bbox_width,
+                                         bbox_height,
+                                         linewidth=1,
+                                         edgecolor='r',
+                                         facecolor='none')
+                ax1.add_patch(rect)
+            ax2 = fig.add_subplot(1, 2, 2)
+            ax2.imshow(processed_image)
+            plt.show()
+            fig.savefig('CenterCrop.png')
         return processed_images
 
 
@@ -245,6 +246,22 @@ class RandomCrop(object):
                 processed_image = cv2.resize(img[y_top:y_bottom, x_left:x_right], (self.img_size_w, self.img_size_h))
 
             processed_images = np.append(processed_images, [processed_image], axis=0)
+            # Debug
+            fig = plt.figure()
+            ax1 = fig.add_subplot(1, 2, 1)
+            ax1.imshow(img)
+            if not bounding_box is None:
+                rect = patches.Rectangle((bounding_box[0], bounding_box[1]),
+                                         bbox_width,
+                                         bbox_height,
+                                         linewidth=1,
+                                         edgecolor='r',
+                                         facecolor='none')
+                ax1.add_patch(rect)
+            ax2 = fig.add_subplot(1, 2, 2)
+            ax2.imshow(processed_image)
+            plt.show()
+            fig.savefig('RandomCrop.png')
 
         return processed_images
 
